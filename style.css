@@ -1,0 +1,320 @@
+/* * Google Font | font-family: "Poppins", sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* * CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 6%;
+}
+
+/* Banner */
+
+.banner {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/banner.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Udemig Logo */
+.header .icon img {
+  width: 50px;
+  border-radius: 50%;
+}
+/* Navbar */
+.navbar {
+  flex: 1;
+  text-align: right;
+}
+/* Navbar List Item */
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+.navbar ul li ::after {
+  content: "";
+  width: 0%;
+  height: 2.4px;
+  display: block;
+  background-color: #f44336;
+  margin: auto;
+  transition: all 0.4s;
+}
+.navbar ul li:hover ::after {
+  width: 100%;
+}
+/* Navbar List Text */
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/* Mebu Bar Icon */
+#menubar {
+  display: none;
+  color: #fff;
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+}
+/* Close Icon */
+#close {
+  display: none;
+}
+/* Text Box */
+.textbox {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textbox h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 62px;
+}
+.textbox p {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0 40px;
+}
+/* Text Box Button */
+.hero-button {
+  display: inline-block;
+  padding: 12px 34px;
+  background: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: all 0.4s;
+  color: white;
+}
+.hero-button:hover {
+  background-color: #f44336;
+  border: solid 1px #f44336;
+}
+/* Courses */
+.courses {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+}
+.courses h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.courses p {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+}
+.courses-block {
+  background-color: #fff3f3;
+  flex-basis: 31%;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  transition: all 0.4s;
+  border-radius: 10px;
+}
+.courses-block h3 {
+  font-weight: 600;
+  margin: 10px 0;
+}
+.courses-block:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.courses-block p {
+  font-weight: 300;
+}
+/* Campus */
+.campus {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-top: 50px;
+}
+.campus h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.campus p {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+}
+.campus-block {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+.campus-block img {
+  width: 100%;
+  display: block;
+}
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.layer:hover {
+  background-color: rgba(226, 0, 0, 0.7);
+}
+.layer h3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 26px;
+  font-weight: 500;
+  transition: all 1s;
+  opacity: 0;
+}
+.layer:hover h3 {
+  opacity: 1;
+  bottom: 49%;
+}
+/* Education */
+.edu {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.edu-col {
+  flex-basis: 31%;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.edu-col img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+.edu-col h3 {
+  margin: 16px 0 15px 0;
+}
+.edu-col p {
+  padding: 0;
+}
+/* Testimonials */
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+.testimonials-col {
+  flex-basis: 44%;
+  margin-bottom: 5%;
+  text-align: left;
+  background-color: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonials-col img {
+  height: 40px;
+  width: 40px;
+  margin: 0 30px 0 5px;
+  border-radius: 50%;
+}
+.testimonials-col h3 {
+  margin-top: 15px;
+}
+.testimonials-col i {
+  color: #f44336;
+}
+/* Call to Action */
+.call-to-action {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/banner2.jpg);
+  margin: 100px auto;
+  width: 80%;
+  padding: 100px 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  text-align: center;
+}
+.call-to-action h1 {
+  color: white;
+  margin-bottom: 40px;
+}
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4 {
+  margin: 20px 0 25px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.footer .footer-desc {
+  width: 80%;
+  margin: auto;
+}
+.icons i {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+/* Responsive Tasarım*/
+@media (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+  #menubar {
+    display: block;
+  }
+  .textbox h1 {
+    font-size: 30px;
+  }
+  .textbox p {
+    font-size: 10px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .edu-col img {
+    height: 200px;
+  }
+  .call-to-action h1 {
+    font-size: 20px;
+  }
+}
