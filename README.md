@@ -31,6 +31,9 @@ CSS3: For creating the design and hover effects.
 Font Awesome: Icons used throughout the site.
 Responsive Design: Using media queries to ensure compatibility across devices.
 
+# 🖥️ Demo
+https://ozanudemig.netlify.app/
+
 # Preview
 
 ![udemigAkademi](https://github.com/user-attachments/assets/b5cca480-72e5-456b-be6f-f3ba05faf331)
