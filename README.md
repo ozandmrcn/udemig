@@ -2,6 +2,7 @@
 
 Welcome to the Udemig Academy Website repository! This project is a single-page website designed using HTML and CSS, with interactive elements and hover effects. The site is fully responsive, providing a smooth user experience across devices.
 
+
 # 🎯 Project Overview
 
 The Udemig Academy Website aims to provide an engaging landing page for a modern educational platform. The site contains the following sections:
